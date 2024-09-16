@@ -1638,7 +1638,7 @@
                         c = a.find("> a").text().trim(),
                         u = o.parents("ul").length,
                         d = Boolean(window.flatsomeVars.rtl),
-                        f = jQuery('\n            <li class="nav-slide-header pt-half pb-half">\n              <button class="toggle">\n                <i class="icon-angle-left"></i>\n                '.concat(c || window.flatsomeVars.i18n.mainMenu, "\n              </button>\n            </li>\n          "));
+                        f = jQuery('\n            <li class="nav-slide-header pt-half pb-half">\n              <button class="toggle">\n                <i class="bi bi-arrow-left"></i>\n                '.concat(c || window.flatsomeVars.i18n.mainMenu, "\n              </button>\n            </li>\n          "));
                     o.prepend(f), n(o);
                     var h = null;
                     l.off("click").on("click", (function(t) {
