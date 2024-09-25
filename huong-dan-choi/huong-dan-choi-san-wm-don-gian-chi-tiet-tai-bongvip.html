@@ -1156,12 +1156,11 @@
                             </a>
                         </div>
                         <div class="flex-col show-for-medium flex-left">
-                            <ul class="mobile-nav nav nav-left ">
+                            <ul class="mobile-nav nav nav-left">
                                 <li class="nav-icon has-icon">
                                     <div class="header-button">
-                                        <a href="" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay"
-                                            data-color="" class="icon button round is-outline is-small"
-                                            aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+                                        <a href="#" id="menu-icon" class="icon button round is-outline is-small"
+                                            aria-label="Menu">
                                             <i class="fas fa-bars"></i>
                                         </a>
                                     </div>
@@ -2120,8 +2119,10 @@ flex-grow">
             </div>
         </footer>
     </div>
-    <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
-        <div class="sidebar-menu no-scrollbar ">
+<a href="#" id="overlay" class="overlay"></a>
+    <a href="#" id="close-menu" class="close-btns">x</a>
+    <div id="main-menu" class="sidebar mobile-sidebar no-scrollbar">
+        <div class="sidebar-content sidebar-menu no-scrollbar">
             <ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
                 <li class="header-search-form search-form html relative has-icon">
                     <div class="header-search-form-wrapper">
@@ -2264,7 +2265,99 @@ flex-grow">
     <script src="https://www.googletagmanager.com/gtag/js?id=G-8KD5VRJFWZ" defer data-deferred="1"></script>
     </script><ins id="code_traffic123_net"></ins>
     <script type='text/javascript' src='https://code.traffic123.net/js.php' defer data-deferred="1"></script>
+        <script>
+        // Lấy các phần tử từ HTML
+        var menu = document.getElementById('main-menu');
+        var overlay = document.getElementById('overlay');
+        var openMenuBtn = document.getElementById('menu-icon');
+        var closeMenuBtn = document.getElementById('close-menu');
+
+        // Mở menu và overlay khi nhấn nút "Mở Menu"
+        openMenuBtn.addEventListener('click', function () {
+            menu.style.display = 'block'; // Hiển thị menu
+            overlay.style.display = 'block'; // Hiển thị nền đen
+            closeMenuBtn.style.display = 'block';
+        });
+
+        closeMenuBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            menu.style.display = 'none'; // Ẩn menu
+            overlay.style.display = 'none'; // Ẩn nền đen
+            closeMenuBtn.style.display = 'none';
+        });
+
+        // Đóng menu và overlay khi nhấn vào overlay
+        overlay.addEventListener('click', function () {
+            menu.style.display = 'none'; // Ẩn menu
+            overlay.style.display = 'none'; // Ẩn nền đen
+            closeMenuBtn.style.display = 'none';
+        });
+
+
+    </script>
     <style id='global-styles-inline-css' type='text/css'>
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .sidebar-content {
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar.open {
+            display: block;
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        .overlay {
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(133, 131, 131, 0.7);
+            /* Nền đen trong suốt */
+            z-index: 1000;
+        }
+
+        .close-btns {
+            display: none;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .close-btn:hover {
+            color: red;
+            /* Đổi màu khi hover */
+        }
+
         :root {
             --wp--preset--aspect-ratio--square: 1;
             --wp--preset--aspect-ratio--4-3: 4/3;
