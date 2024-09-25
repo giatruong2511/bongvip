@@ -9745,157 +9745,214 @@ html {
   }
 }
 .icon-lock:before {
-  content: "";
+  content: "\f023"; /* Lock */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
 }
 .icon-user-o:before {
-  content: "";
+  content: "\f406"; /* User (o) */
 }
 .icon-line:before,
 .icon-chat:before {
-  content: "";
+  content: "\f0e5"; /* Chat */
 }
 .icon-user:before {
-  content: "";
+  content: "\f007"; /* User */
 }
 .icon-shopping-cart:before {
-  content: "";
+  content: "\f07a"; /* Shopping Cart */
 }
 .icon-tumblr:before {
-  content: "";
+  content: "\f173"; /* Tumblr */
 }
 .icon-gift:before {
-  content: "";
+  content: "\f06b"; /* Gift */
 }
 .icon-phone:before {
-  content: "";
+  content: "\f095"; /* Phone */
 }
 .icon-play:before {
-  content: "";
+  content: "\f04b"; /* Play */
 }
 .icon-menu:before {
-  content: "";
+  content: "\f0c9"; /* Bars (Menu) */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-equalizer:before {
-  content: "";
+  content: "\f028"; /* Equalizer */
 }
 .icon-shopping-basket:before {
-  content: "";
+  content: "\f291"; /* Shopping Basket */
 }
 .icon-shopping-bag:before {
-  content: "";
+  content: "\f290"; /* Shopping Bag */
 }
 .icon-google-plus:before {
-  content: "";
+  content: "\f2b3"; /* Google Plus */
 }
 .icon-heart-o:before {
-  content: "";
+  content: "\f004"; /* Heart (o) */
 }
 .icon-heart:before {
-  content: "";
+  content: "\f004"; /* Heart */
 }
 .icon-500px:before {
-  content: "";
+  content: "\f26e"; /* 500px */
 }
 .icon-vk:before {
-  content: "";
+  content: "\f189"; /* VK */
 }
 .icon-angle-left:before {
-  content: "";
+  content: "\f104"; /* Angle Left */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-angle-right:before {
-  content: "";
+  content: "\f105"; /* Angle Right */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-angle-up:before {
-  content: "";
+  content: "\f106"; /* Angle Up */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
+
 .icon-angle-down:before {
-  content: "\f078";
-  font-family: "Bootstrap Icons";
+  content: "\f078"; /* Mã Unicode cho biểu tượng fa-chevron-down */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-twitter:before {
-  content: "";
+  content: "\f099"; /* Twitter */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
-.icon-envelop:before {
-  content: "";
+.icon-envelope:before {
+  content: "\f003"; /* Envelope */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-tag:before {
-  content: "";
+  content: "\f02c"; /* Tag */
 }
 .icon-star:before {
-  content: "";
+  content: "\f005"; /* Star */
 }
 .icon-star-o:before {
-  content: "";
+  content: "\f006"; /* Star (o) */
 }
 .icon-facebook:before {
-  content: "";
+  content: "\f09a"; /* Facebook */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-feed:before {
-  content: "";
+  content: "\f09e"; /* RSS */
 }
 .icon-checkmark:before {
-  content: "";
+  content: "\f00c"; /* Check */
 }
 .icon-plus:before {
-  content: "";
+  content: "\f067"; /* Plus */
 }
 .icon-instagram:before {
-  content: "";
+  content: "\f16d"; /* Instagram */
 }
 .icon-tiktok:before {
-  content: "";
+  content: "\f6f9"; /* TikTok */
 }
 .icon-pinterest:before {
-  content: "";
+  content: "\f231"; /* Pinterest */
 }
 .icon-search:before {
-  content: "";
+  content: "\f002"; /* Search */
 }
 .icon-skype:before {
-  content: "";
+  content: "\f167"; /* Skype */
 }
 .icon-dribbble:before {
-  content: "";
+  content: "\f17d"; /* Dribbble */
 }
 .icon-certificate:before {
-  content: "";
+  content: "\f0a3"; /* Certificate */
 }
 .icon-expand:before {
-  content: "";
+  content: "\f065"; /* Expand */
 }
 .icon-linkedin:before {
-  content: "";
+  content: "\f0e1"; /* LinkedIn */
 }
 .icon-map-pin-fill:before {
-  content: "";
+  content: "\f041"; /* Map Pin */
 }
 .icon-pen-alt-fill:before {
-  content: "";
+  content: "\f305"; /* Pen */
 }
 .icon-youtube:before {
-  content: "";
+  content: "\f167"; /* YouTube */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-flickr:before {
-  content: "";
+  content: "\f16e"; /* Flickr */
 }
 .icon-clock:before {
-  content: "";
+  content: "\f017"; /* Clock */
 }
 .icon-snapchat:before {
-  content: "";
+  content: "\f2ab"; /* Snapchat */
 }
 .icon-whatsapp:before {
-  content: "";
+  content: "\f40c"; /* WhatsApp */
 }
 .icon-telegram:before {
-  content: "";
+  content: "\f2c6"; /* Telegram */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-twitch:before {
-  content: "";
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
+  content: "\f1e8"; /* Twitch */
 }
 .icon-discord:before {
-  content: "";
+  content: "\f392"; /* Discord */
 }
+
 .ux-shape-divider {
   --divider-top-width: 100%;
   --divider-width: 100%;

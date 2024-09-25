@@ -9809,10 +9809,10 @@ html {
   content: "";
 }
 .icon-angle-down:before {
-  content: "";
+  content: "v";
 }
 .icon-twitter:before {
-  content: "";
+  content: "v";
 }
 .icon-envelop:before {
   content: "";
