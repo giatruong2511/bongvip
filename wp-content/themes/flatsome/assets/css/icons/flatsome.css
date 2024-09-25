@@ -9891,6 +9891,11 @@ html {
 }
 .icon-search:before {
   content: "\f002"; /* Search */
+  font-family: "Font Awesome 5 Free"; /* Đảm bảo là Font Awesome */
+  font-weight: 900; /* Chỉ định trọng lượng font */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: #333; /* Màu sắc biểu tượng */
+  margin-right: 5px;
 }
 .icon-skype:before {
   content: "\f167"; /* Skype */
